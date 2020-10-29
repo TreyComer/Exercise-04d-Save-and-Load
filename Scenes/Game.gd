@@ -10,8 +10,7 @@ func SubtractPressed():
 func AddPressed():
 	get_node("/root/SaveSystem").DisplayValue += 1
 
-func SavePressed():
-	pass
-
-func LoadPressed():
-	pass
+func SavePressed(section, key):
+	get_node("/root/SaveSysytem").saveValue("Values", "ValuesOne")
+func LoadPressed(section, key):
+	get_node("/root/SaveSystem").loadValue("Values", "ValuesOne")
